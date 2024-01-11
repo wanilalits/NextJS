@@ -1,0 +1,19 @@
+
+.outerBorder{
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(3, 109, 86);
+    color: rgb(94, 0, 0);
+    margin-bottom: 20px;
+    padding-left: 3px;
+}
+.myborder{
+    border-style: double;
+    border-width: 2px;
+    border-color: rgb(141, 5, 5);
+    color: rgb(46, 3, 3);
+    display: inline-block
+}
+.myinput{
+width: 50px;
+}
