@@ -1,6 +1,6 @@
 "use client"
-import React, { useState } from 'react';
-import { addUser } from '../redux/slice'
+import React, { useState,useEffect } from 'react';
+import { addUser, addinitialData } from '../redux/slice'
 import { useDispatch } from 'react-redux'
 import components from './components.module.css';
 function AddUsers() {
@@ -9,6 +9,15 @@ const [adderss, setAdderss] = useState({ myaddress: '' });
 const dispatch = useDispatch();
 const userDispatch = () => {
 dispatch(addUser([name, adderss])) }
+let users
+useEffect(()=>{
+    (
+users= JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : [],
+dispatch(addinitialData(users))
+)
+}, [] )
+
+
 
     return (
         <div className={components.outerBorder}>
