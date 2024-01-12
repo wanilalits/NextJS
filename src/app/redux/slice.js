@@ -1,8 +1,8 @@
 const { createSlice, nanoid, current, createAsyncThunk } = require("@reduxjs/toolkit");
 let initialState = {
-  //  users:[] //....if no data initially
+  users:[], //....if no data initially
   userAPIData: [],
-  users: JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : [],
+  //users: JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : [],
  
 }
 
