@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeUser, updateUser } from '../redux/slice';
 import Link from 'next/link';
@@ -12,9 +12,11 @@ function DisplayUsers() {
     
     const userData = useSelector((data) => data.userData.users);
     const dispatch = useDispatch();
+    let users
+   
 
     const userDispatch = (id) => {
-        console.log(name, address)
+       // console.log(name, address)
         dispatch(updateUser([id, name, address]))
         setUpdateID(-1)
     }
