@@ -21,7 +21,7 @@ dispatch(addinitialData(users))
 
     return (
         <div className={components.outerBorder}>
-            <h1>Add Users and Address as Object in Redux</h1>
+            <h1>Add Users and Address as a Object in Redux</h1>
             <input type='text'
                 onChange={(e) => (setName(e.target.value))} 
                 className="add-user-input" 
