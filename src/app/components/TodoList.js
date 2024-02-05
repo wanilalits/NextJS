@@ -18,7 +18,7 @@ function TodoList() {
     const todoData = useSelector((data) => data.todasData.todos);
     return (
         <div>
-            <h1>To Do List</h1>
+            <h1>Add List (no local storage access)</h1>
             <br></br>
             <input type='text'
                 onChange={(e) => (setTodo(e.target.value))}
